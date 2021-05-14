@@ -1,0 +1,33 @@
+{
+   "name": "profile-server",
+   "version": "1.0.0",
+   "description": "",
+   "main": "src/app.js",
+   "scripts": {
+      "build": "babel index.js --out-file index-compiled.js",
+      "serve": "nodemon --exec babel-node src/app.js"
+   },
+   "author": "arya-maahendra",
+   "license": "ISC",
+   "dependencies": {
+      "body-parser": "^1.19.0",
+      "cors": "^2.8.5",
+      "dotenv": "^9.0.2",
+      "express": "^4.17.1",
+      "mongodb": "^3.6.6",
+      "mongoose": "^5.12.8",
+      "winston": "^3.3.3"
+   },
+   "devDependencies": {
+      "@babel/core": "^7.14.2",
+      "@babel/node": "^7.14.2",
+      "@babel/preset-env": "^7.14.2",
+      "eslint": "^7.26.0",
+      "eslint-config-airbnb-base": "^14.2.1",
+      "eslint-config-prettier": "^8.3.0",
+      "eslint-plugin-import": "^2.22.1",
+      "eslint-plugin-prettier": "^3.4.0",
+      "nodemon": "^2.0.7",
+      "prettier": "^2.3.0"
+   }
+}
