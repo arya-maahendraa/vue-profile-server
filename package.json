@@ -5,17 +5,21 @@
    "main": "src/app.js",
    "scripts": {
       "build": "babel index.js --out-file index-compiled.js",
-      "serve": "nodemon --exec babel-node src/app.js"
+      "serve": "nodemon --exec babel-node src/app.js",
+      "genkey": "babel-node src/genereteKeyPair.js"
    },
    "author": "arya-maahendra",
    "license": "ISC",
    "dependencies": {
-      "body-parser": "^1.19.0",
+      "celebrate": "^14.0.0",
       "cors": "^2.8.5",
       "dotenv": "^9.0.2",
       "express": "^4.17.1",
       "mongodb": "^3.6.6",
       "mongoose": "^5.12.8",
+      "passport": "^0.4.1",
+      "passport-jwt": "^4.0.0",
+      "typedi": "^0.10.0",
       "winston": "^3.3.3"
    },
    "devDependencies": {

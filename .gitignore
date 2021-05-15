@@ -1,3 +1,5 @@
 node_modules
 package-lock.json
+d_rsa_pub.pem
+d_rsa_priv.pem
 .env

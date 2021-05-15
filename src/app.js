@@ -1,14 +1,14 @@
 import express from 'express';
 import config from './config';
-import Logger from './loaders/logger'
+import Logger from './loaders/logger';
+import passport from 'passport';
 
 async function startServer() {
    const app = express();
 
-   await require('./loaders').default(app);
-
-   app.get('/', (req, res) => {
-      res.send('Hello World');
+   await require('./loaders').default({
+      expressApp: app,
+      passportInstance: passport,
    });
 
    app.listen(config.port, () => {
